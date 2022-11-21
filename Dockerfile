@@ -23,3 +23,5 @@ RUN curl https://packages.microsoft.com/keys/microsoft.asc | apt-key add - &&\
  ACCEPT_EULA=Y apt-get -y install msodbcsql17
 
 RUN python3 -m pip install jupyter pandas matplotlib numpy snowflake-connector-python pyodbc
+RUN ln -s /usr/lib/x86_64-linux-gnu/libcrypto.so.3 /usr/lib/libcrypto.so
+
