@@ -1,0 +1,6 @@
+#SCRON -p standard-s
+#SCRON -c 16
+#SCRON --mem 80G
+#SCRON -o repeating_jobs/local2snowflake_logs_detail.txt
+#SCRON -J local2sf
+*/5 * * * * bash /users/yunjieh/Documents/dbsmu/scripts/localdb2sf/local2sf.sh #run every 5 mins
